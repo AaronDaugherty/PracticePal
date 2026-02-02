@@ -8,6 +8,15 @@ class DashboardController extends Controller
 {
     public function index() {
         $user = auth()->user();
-        return view('dashboard', compact('user'));
+
+        $routines = auth()->user()
+            ->practiceRoutines()
+            ->latest()
+            ->get();
+
+        return view('dashboard', compact
+            ('user', 'routines'));
+
+
     }
 }
