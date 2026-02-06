@@ -10,10 +10,18 @@
 @theme {
     --font-sans: 'Kanit';
 
+    /*Blue Techy*/
     --color-azure: #054A91;
     --color-steel: #3E7CB1;
     --color-wisteria: #81A4CD;
     --color-alice: #DBE4EE;
     --color-harvest: #F17300;
+
+    /*Sophisticated Forest Leather*/
+    --color-deep-teal: #70877f;
+    --color-cream: #e7ebc5;
+
+    --color-off-white1: #FFFCFF;
+    --color-egg: #F4F4F4;
 
 }

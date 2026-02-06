@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoutineElementController;
 use App\Http\Controllers\PracticeRoutineController;
@@ -27,8 +28,11 @@ Route::post('/login', [UserController::class, 'login']);
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('practice-routines', PracticeRoutineController::class);
+    Route::get('/practice', [PracticeController::class] );
 });
 
 Route::post('/routine-elements', [RoutineElementController::class, 'store'])
     ->middleware('auth')
     ->name('routine-elements.store');
+
+    

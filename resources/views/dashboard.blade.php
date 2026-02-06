@@ -2,11 +2,11 @@
 
 
 @auth()
-<div class="bg-wisteria">
+<div class="bg-deep-teal">
 
     <form action="/logout" method="POST" class="p-5">
         @csrf
-        <button class="bg-azure text-wisteria rounded-md cursor-pointer px-2">Log Out</button>
+        <button class="bg-cream rounded-md cursor-pointer px-2">Log Out</button>
     </form>
 
 
@@ -30,7 +30,7 @@
             @csrf
             <p class="font-light">Practice Log</p>
             <textarea name="practice-log" class="bg-alice min-w-100 min-h-50"></textarea>
-            <button class="bg-harvest rounded-md cursor-pointer px-2">Submit</button>
+            <button class="bg-cream rounded-md cursor-pointer px-2">Submit</button>
         </form>
     </div>
 </div>
