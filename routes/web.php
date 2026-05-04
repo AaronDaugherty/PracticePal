@@ -28,7 +28,7 @@ Route::post('/login', [UserController::class, 'login']);
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('practice-routines', PracticeRoutineController::class);
-    Route::get('/practice', [PracticeController::class] );
+    Route::get('/practice-session', [PracticeController::class] );
 });
 
 Route::post('/routine-elements', [RoutineElementController::class, 'store'])
